@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regoligo Digital</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <section>
+      <ul id="relogio">
+        <li class="item-circulo" style="--clr: #05dced">
+          <i class="pontos hr_ponto"></i>
+          <svg>
+            <circle cx="70" cy="70" r="70"></circle>
+            <circle cx="70" cy="70" r="70" id="hh"></circle>
+          </svg>
+          <div id="horas">00</div>
+        </li>
+        <li class="item-circulo" style="--clr: rgba(236, 144, 0, 1)">
+          <i class="pontos min_ponto"></i>
+          <svg>
+            <circle cx="70" cy="70" r="70"></circle>
+            <circle cx="70" cy="70" r="70" id="mm"></circle>
+          </svg>
+          <div id="minutos">00</div>
+        </li>
+        <li class="item-circulo" style="--clr: #6fff71">
+          <i class="pontos seg_ponto"></i>
+          <svg>
+            <circle cx="70" cy="70" r="70"></circle>
+            <circle cx="70" cy="70" r="70" id="ss"></circle>
+          </svg>
+          <div id="segundos">00</div>
+        </li>
+        <li class="ap">
+          <div id="ampm">AM</div>
+        </li>
+      </ul>
+    </section>
+
+    <div id="teste"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
